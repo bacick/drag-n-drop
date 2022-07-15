@@ -42,6 +42,11 @@ body {
   cursor: grab;
 }
 
+.item:hover {
+  transform: scale(1.09);
+  transition: all 0.5s ease-in-out;
+}
+
 .item:active {
   cursor: grabbing;
 }
@@ -61,4 +66,20 @@ body {
 
 .done {
   background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+  background-color: rgba(101, 126, 224, 0.4);
+} 
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  box-shadow: 4px 4px 9px rgba(7, 84, 129, 0.36);
+  background-color: rgba(154, 220, 228, 0.4);
+  border-radius: 20px;
+  transition: all 400ms ease-in-out;
+  transform: scale(1.15);
 }
